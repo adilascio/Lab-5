@@ -1,5 +1,8 @@
-// All user-facing strings for the client (lab requirement: user strings stored separately).
-// Attribution: structure drafted with help from Claude (Anthropic).
+/**
+ * Author: Andre Di Lascio
+ * All user-facing strings for the client, kept separate from the code.
+ * Written with help of Claude.
+ */
 
 class UserStrings {
     static PAGE_TITLE = "Lab 5 - Patient Database";

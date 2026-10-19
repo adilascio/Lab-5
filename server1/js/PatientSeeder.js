@@ -1,4 +1,8 @@
-// Holds the fixed sample patients and builds the INSERT sent by the Insert button.
+/**
+ * Author: Andre Di Lascio
+ * Holds the four sample patients and builds the INSERT sent by the Insert button.
+ * Written with help of Claude.
+ */
 
 class PatientSeeder {
     static TABLE_NAME = "patient";

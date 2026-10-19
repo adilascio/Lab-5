@@ -1,4 +1,8 @@
-// Wires the page together: fills in text from UserStrings and handles button clicks.
+/**
+ * Author: Andre Di Lascio
+ * Main page controller: fills in the page text and handles button clicks.
+ * Written with help of Claude.
+ */
 
 class App {
     constructor() {

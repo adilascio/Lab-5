@@ -1,7 +1,11 @@
-// Connection settings for the API server (server2, a different origin).
-// Update API_BASE_URL once server2 is deployed - see ../API_CONTRACT.md
+/**
+ * Author: Andre Di Lascio
+ * Connection settings for the API server (server2).
+ * Written with help of Claude.
+ */
 
 class AppConfig {
+    // Replace with the deployed https URL of server2 (see ../API_CONTRACT.md)
     static API_BASE_URL = "http://localhost:8080/api/v1/sql";
     static REQUEST_TIMEOUT_MS = 10000;
 }

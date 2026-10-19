@@ -1,4 +1,8 @@
-// One patient row: name + date of birth (YYYY-MM-DD).
+/**
+ * Author: Andre Di Lascio
+ * A single patient row (name and date of birth) and its SQL VALUES formatting.
+ * Written with help of Claude.
+ */
 
 class Patient {
     constructor(name, dateOfBirth) {

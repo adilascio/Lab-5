@@ -1,6 +1,8 @@
-// Sends SQL to server2 following API_CONTRACT.md:
-//   GET  {base}/{encodeURIComponent(sql)}   for reads
-//   POST {base}  body {"query": sql}         for inserts
+/**
+ * Author: Andre Di Lascio
+ * Sends SQL to server2: GET for reads, POST for inserts.
+ * Written with help of Claude.
+ */
 
 class ApiClient {
     static METHOD_GET = "GET";

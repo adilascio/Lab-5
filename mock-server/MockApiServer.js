@@ -1,7 +1,8 @@
-// DEVELOPMENT ONLY - not part of the submission.
-// Fake server2 that follows ../API_CONTRACT.md with an in-memory "patient" table,
-// so the frontend can be tested before the real backend exists.
-// Run: node MockApiServer.js   (API on http://localhost:8080/api/v1/sql)
+/**
+ * Author: Andre Di Lascio
+ * Development-only fake server2 with an in-memory patient table, for testing the client.
+ * Written with help of Claude.
+ */
 
 const http = require("http");
 

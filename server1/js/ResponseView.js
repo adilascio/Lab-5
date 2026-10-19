@@ -1,6 +1,10 @@
-// Renders server responses into an output element.
-// Uses textContent only (never innerHTML) so data stored in the table can't inject HTML.
+/**
+ * Author: Andre Di Lascio
+ * Renders server responses as messages or a results table.
+ * Written with help of Claude.
+ */
 
+// Uses textContent only (never innerHTML) so data stored in the table can't inject HTML.
 class ResponseView {
     static CLASS_MESSAGE = "message";
     static CLASS_ERROR = "message error";

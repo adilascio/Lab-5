@@ -1,5 +1,8 @@
-// A normalized result for every request, so the UI always handles the same shape
-// whether the server succeeded, returned an error, or could not be reached.
+/**
+ * Author: Andre Di Lascio
+ * Normalized result object for every API request (success, server error or network failure).
+ * Written with help of Claude.
+ */
 
 class ApiResult {
     static ERROR_NETWORK = "NETWORK_ERROR";

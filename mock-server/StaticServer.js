@@ -1,5 +1,8 @@
-// DEVELOPMENT ONLY - serves ../server1 on http://localhost:5500 (a different origin from the mock API).
-// Run: node StaticServer.js
+/**
+ * Author: Andre Di Lascio
+ * Development-only static file server for the client on localhost:5500.
+ * Written with help of Claude.
+ */
 
 const http = require("http");
 const fs = require("fs");
