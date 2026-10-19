@@ -1,0 +1,137 @@
+:root {
+    --bg: #f4f6f9;
+    --card: #ffffff;
+    --text: #1f2933;
+    --muted: #5f6b7a;
+    --border: #d9dee5;
+    --accent: #2563eb;
+    --accent-hover: #1d4ed8;
+    --success-bg: #e8f6ee;
+    --success-text: #1e6b3d;
+    --error-bg: #fdecec;
+    --error-text: #a12626;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 32px 16px 48px;
+}
+
+h1 {
+    margin: 0 0 4px;
+    font-size: 1.9rem;
+}
+
+h2 {
+    margin: 0 0 4px;
+    font-size: 1.25rem;
+}
+
+.subtitle,
+.description {
+    margin: 0 0 16px;
+    color: var(--muted);
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 24px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 0.95rem;
+    resize: vertical;
+    margin-bottom: 12px;
+}
+
+button {
+    background: var(--accent);
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--accent-hover);
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+.output {
+    margin-top: 16px;
+}
+
+.message {
+    margin: 0;
+    padding: 10px 12px;
+    border-radius: 6px;
+    background: var(--bg);
+    word-break: break-word;
+}
+
+.message.success {
+    background: var(--success-bg);
+    color: var(--success-text);
+}
+
+.message.error {
+    background: var(--error-bg);
+    color: var(--error-text);
+}
+
+.table-wrapper {
+    margin-top: 12px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+}
+
+th {
+    background: var(--bg);
+}

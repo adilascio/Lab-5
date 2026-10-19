@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1 id="heading"></h1>
+            <p id="intro" class="subtitle"></p>
+        </header>
+
+        <section class="card">
+            <h2 id="insertHeading"></h2>
+            <p id="insertDescription" class="description"></p>
+            <button id="insertButton" type="button"></button>
+            <div id="insertOutput" class="output" aria-live="polite"></div>
+        </section>
+
+        <section class="card">
+            <h2 id="queryHeading"></h2>
+            <p id="queryDescription" class="description"></p>
+            <label id="queryLabel" for="queryInput"></label>
+            <textarea id="queryInput" rows="5" spellcheck="false"></textarea>
+            <button id="queryButton" type="button"></button>
+            <div id="queryOutput" class="output" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <!-- Order matters: strings and config first, App last -->
+    <script src="lang/messages/en/user.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/ApiResult.js"></script>
+    <script src="js/ApiClient.js"></script>
+    <script src="js/Patient.js"></script>
+    <script src="js/PatientSeeder.js"></script>
+    <script src="js/QueryClassifier.js"></script>
+    <script src="js/ResponseView.js"></script>
+    <script src="js/App.js"></script>
+</body>
+</html>
