@@ -18,6 +18,13 @@ class Database {
             multipleStatements: false
         };
 
+        if (Config.DB_SSL) {
+            // Verify the server with the provider's CA when given; otherwise still encrypt the connection
+            sharedOptions.ssl = Config.DB_CA
+                ? { ca: Config.DB_CA.replace(/\\n/g, "\n"), rejectUnauthorized: true }
+                : { rejectUnauthorized: false };
+        }
+
         this.writerPool = mysql.createPool({
             ...sharedOptions,
             user: Config.WRITER_USER,

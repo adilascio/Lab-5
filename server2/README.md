@@ -37,7 +37,7 @@ $env:READER_PASS = "<reader-password>"
 npm start
 ```
 
-Optional settings are `PORT`, `BASE_PATH`, `DB_HOST`, `DB_PORT`, `DB_NAME`,
+Optional settings are `PORT`, `BASE_PATH`, `DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_SSL`, `DB_CA`,
 `WRITER_USER`, `WRITER_PASS`, `READER_USER`, `READER_PASS`, and
 `ALLOWED_ORIGIN`. The default API base is `http://localhost:8080/api/v1/sql`;
 set `ALLOWED_ORIGIN` to the deployed Server 1 origin when hosting. The deployed
